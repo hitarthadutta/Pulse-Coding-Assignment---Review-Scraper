@@ -1,0 +1,18 @@
+{
+  "company": "ExampleCo",
+  "start": "2023-01-01",
+  "end": "2024-12-31",
+  "source": "all",
+  "reviews": [
+    {
+      "title": "Great product",
+      "description": "Example review content. This is a sample output entry.",
+      "date": "2023-05-12",
+      "source": "g2",
+      "additional": {
+        "rating": "5/5",
+        "reviewer": "Jane D"
+      }
+    }
+  ]
+}
