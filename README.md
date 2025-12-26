@@ -1,9 +1,25 @@
-PulseAI - Review Scraper
+Pulse-Coding-Assignment: Review-Scraper
 ========================
 
 Overview
 --------
-This project provides a CLI script to scrape product reviews for a given company from G2, Capterra, and TrustRadius (third source). The script accepts a company name, start date, end date, and source (g2, capterra, trustradius, or all), and writes a JSON file with the matching reviews.
+PulseAI is a Python-based command-line tool designed to scrape SaaS product reviews from popular platforms such as G2, Capterra, and TrustRadius.
+
+The script allows users to provide key inputs including the company name, start date, end date, and review source, making the scraping process flexible and configurable.
+
+Based on the selected inputs, the tool automatically collects all relevant reviews within the specified time range while handling pagination efficiently.
+
+Each review is parsed and converted into a structured JSON format, containing the review title, description, date, rating, reviewer details, and other available metadata.
+
+To handle dynamically loaded web pages and bot-protected content, the project supports both Requests + BeautifulSoup scraping and an optional Selenium fallback mode.
+
+The codebase follows a modular design where each review source has its own scraper module, allowing easy maintenance and future extension to additional platforms.
+
+Input validation and error handling are implemented to manage invalid company names, incorrect date ranges, or unavailable pages gracefully.
+
+The final output can be directly used for downstream tasks such as sentiment analysis, market research, or product comparison studies.
+
+The project emphasizes clean code structure, scalability, and practical applicability, making it suitable for academic assignments as well as real-world data collection use cases.
 
 Notes
 -----
